@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Proyecto_sinNombre</string>
+    <string name="title_activity_main_app">MainApp</string>
+    <string name="title_home">Inicio</string>
+    <string name="title_dashboard">Productos</string>
+    <string name="title_dashboard2">Ventas</string>
+    <string name="title_profile">Perfil</string>
 </resources>
