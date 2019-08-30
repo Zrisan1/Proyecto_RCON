@@ -1,5 +1,8 @@
 package com.example.proyecto_sinnombre;
 
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -46,6 +49,19 @@ public class MainApp extends AppCompatActivity {
         BottomNavigationView navView = (BottomNavigationView) findViewById(R.id.nav_view);
         navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         CargarFragment(new HomeFragment());
+
+        ////////////////////////----------R-------//////////////////////
+        //Obtiene valor de preferencia (la primera ocasión es por default true).
+        boolean muestra = getValuePreference(getApplicationContext());
+
+        //Valida si muestra o no LicenseActivity.
+        if(muestra){
+            Intent myIntent = new Intent(this, OnBoardingActivity.class);
+            startActivity(myIntent);
+            saveValuePreference(getApplicationContext(), false);
+
+        }
+        ///////////////////////---------FIN R -----////////////////////
     }
 
     public void CargarFragment(Fragment fragment){
@@ -57,5 +73,24 @@ public class MainApp extends AppCompatActivity {
         transaction.commit();
 
     }
+
+    ///////////////////////-------- R ----------////////////////////
+    private String PREFS_KEY = "mispreferencias";
+
+    public void saveValuePreference(Context context, Boolean mostrar) {
+        SharedPreferences settings = context.getSharedPreferences(PREFS_KEY, MODE_PRIVATE);
+        SharedPreferences.Editor editor;
+        editor = settings.edit();
+        editor.putBoolean("license", mostrar);
+        editor.commit();
+    }
+
+
+
+    public boolean getValuePreference(Context context) {
+        SharedPreferences preferences = context.getSharedPreferences(PREFS_KEY, MODE_PRIVATE);
+        return  preferences.getBoolean("license", true);
+    }
+    ///////////////////////---------FIN R -----////////////////////
 
 }
