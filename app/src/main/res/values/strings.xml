@@ -6,4 +6,8 @@
     <string name="title_dashboard2">Ventas</string>
     <string name="title_profile">Perfil</string>
     <string name="TituloApp">COSAS QUE VUELAN</string>
+    <string name="title_frame_profile">Mi Perfil</string>
+    <string name="close_session">Cerrar Sesion</string>
+    <string name="texto_perfil_default">Nombre Apellido</string>
+    <string name="texto_correo_default">correo@dominio.com</string>
 </resources>

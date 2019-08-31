@@ -14,7 +14,6 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.view.MenuItem;
-import android.widget.TextView;
 
 public class MainApp extends AppCompatActivity {
 
@@ -36,6 +35,7 @@ public class MainApp extends AppCompatActivity {
                 case R.id.navigation_profile:
                     CargarFragment(new Profile_Fragment());
                     return true;
+
             }
             return false;
         }
@@ -62,6 +62,7 @@ public class MainApp extends AppCompatActivity {
 
         }
         ///////////////////////---------FIN R -----////////////////////
+
     }
 
     public void CargarFragment(Fragment fragment){
