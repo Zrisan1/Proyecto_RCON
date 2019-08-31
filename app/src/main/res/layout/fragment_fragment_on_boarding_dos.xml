@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,19 +12,77 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="¡HOLA!"
-        android:textSize="48sp"
-        android:layout_marginTop="50dp"
+        android:text="Sobre la App"
+        android:textSize="40dp"
+        android:layout_marginTop="20dp"
         android:textColor="#fff"
         />
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="141dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="110dp"
+        app:srcCompat="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="141dp"
+        android:layout_height="114dp"
+        android:translationX="110dp"
+        android:translationY="-110dp"
+        app:srcCompat="@drawable/img" />
+
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:layout_marginTop="20dp"
-        android:text="Estas en la pantalla DOS."
-        android:textColor="#fff"
-        />
+        android:text="TextView"
+        android:textSize="20dp"
+        android:layout_marginRight="110dp"
+        android:translationY="-110dp"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:layout_marginRight="-110dp"
+        android:translationY="-134dp"/>
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="141dp"
+        android:layout_height="114dp"
+        android:layout_marginRight="-110dp"
+        android:translationY="-80dp"
+        app:srcCompat="@drawable/square" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="141dp"
+        android:layout_height="114dp"
+        android:layout_marginRight="110dp"
+        android:translationY="-190dp"
+        app:srcCompat="@drawable/danger" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:layout_marginRight="110dp"
+        android:translationY="-180dp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:layout_marginRight="-110dp"
+        android:translationY="-210dp"/>
+
 
 </LinearLayout>
