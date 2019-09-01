@@ -11,5 +11,5 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-
+<!--android:theme="@style/AppTheme"  eso borre del manifest(por si pasa algo raro) //solo es el toolbar-->
 </resources>
