@@ -8,11 +8,18 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+        android:layout_width="197dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="288dp"
-        android:text="Productos here"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="60dp"
+        android:text="Mis Productos"
+        android:textSize="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </RelativeLayout>
