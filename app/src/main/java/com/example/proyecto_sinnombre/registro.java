@@ -73,10 +73,10 @@ public class registro extends AppCompatActivity {
 
                     Map<String, Object> datapersona = new HashMap<>();
 
-                    datapersona.put("id",id);
-                    datapersona.put("nombre",nombre);
-                    datapersona.put("correo",correo);
-                    datapersona.put("password",contra);
+//                    datapersona.put("id",id);
+//                    datapersona.put("nombre",nombre);
+//                    datapersona.put("correo",correo);
+//                    datapersona.put("password",contra);
 
                     mDatabase.child(id).setValue(datapersona).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
@@ -84,6 +84,7 @@ public class registro extends AppCompatActivity {
                             if(task2.isSuccessful()){
                                 startActivity(new Intent(registro.this,Login.class));
                                 finish();
+                                Toast.makeText(registro.this, "Registro exitoso", Toast.LENGTH_SHORT).show();
                             }else{
                                 Toast.makeText(registro.this, "asdasdad", Toast.LENGTH_SHORT).show();
                             }
