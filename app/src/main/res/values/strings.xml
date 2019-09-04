@@ -10,4 +10,11 @@
     <string name="close_session">Cerrar Sesion</string>
     <string name="texto_perfil_default">Nombre Apellido</string>
     <string name="texto_correo_default">correo@dominio.com</string>
+    <string name="login_user">Username</string>
+    <string name="login_pass">Password</string>
+    <string name="login_btn">Log in</string>
+    <string name="login_btn_cuenta">No tienes cuenta?, Sing in here</string>
+    <string name="registro_title">Nuevo Usuario</string>
+    <string name="registro_btn">Registrarmes</string>
+    <string name="registro_email">Correo</string>
 </resources>

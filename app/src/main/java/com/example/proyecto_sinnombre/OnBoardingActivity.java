@@ -79,9 +79,8 @@ public class OnBoardingActivity extends FragmentActivity {
     }
 
     private void finishOnboarding() {
-        Intent main = new Intent(this, MainApp.class);
+        Intent main = new Intent(this, Login.class);
         startActivity(main);
-
         finish();
     }
 }
