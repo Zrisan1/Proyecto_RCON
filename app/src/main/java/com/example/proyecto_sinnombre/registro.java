@@ -70,7 +70,7 @@ public class registro extends AppCompatActivity {
                 if(task.isSuccessful()){
 
                     String id = mAuth.getCurrentUser().getUid();
-
+                    DatabaseReference current_user_db = mDatabase.child(id);
                     Map<String, Object> datapersona = new HashMap<>();
 
                     datapersona.put("id",id);
@@ -82,10 +82,13 @@ public class registro extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<Void> task2) {
                             if(task2.isSuccessful()){
-                                startActivity(new Intent(registro.this,Login.class));
-                                finish();
+                                //startActivity(new Intent(registro.this,Login.class));
+                                //finish();
+                                Intent IrLogin =new Intent(registro.this,Login.class);
+                                startActivity(IrLogin);
+                                Toast.makeText(registro.this, "REGISTRADO EXITOSAMENTE", Toast.LENGTH_LONG).show();
                             }else{
-                                Toast.makeText(registro.this, "asdasdad", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(registro.this, "asdasdad", Toast.LENGTH_LONG).show();
                             }
                         }
                     });

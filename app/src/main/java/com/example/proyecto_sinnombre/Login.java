@@ -66,12 +66,12 @@ public class Login extends AppCompatActivity {
 //                            cz auth automatically checks it, it is needed if your app
 //                            has fb, google login as well as general login
                         checkUserExists();
-                        Toast.makeText(Login.this, "Success", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Login.this, "Success", Toast.LENGTH_LONG).show();
                     }
                     else
                     {
                         String error = task.getException().getMessage();
-                        Toast.makeText(Login.this, "Error "+error, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Login.this, "Error "+error, Toast.LENGTH_LONG).show();
                     }
                 }
             });
