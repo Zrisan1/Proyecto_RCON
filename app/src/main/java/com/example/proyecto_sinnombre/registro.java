@@ -82,11 +82,16 @@ public class registro extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<Void> task2) {
                             if(task2.isSuccessful()){
+
                                 //startActivity(new Intent(registro.this,Login.class));
                                 //finish();
                                 Intent IrLogin =new Intent(registro.this,Login.class);
                                 startActivity(IrLogin);
                                 Toast.makeText(registro.this, "REGISTRADO EXITOSAMENTE", Toast.LENGTH_LONG).show();
+                                startActivity(new Intent(registro.this,Login.class));
+                                finish();
+                                Toast.makeText(registro.this, "Registro exitoso", Toast.LENGTH_SHORT).show();
+
                             }else{
                                 Toast.makeText(registro.this, "asdasdad", Toast.LENGTH_LONG).show();
                             }

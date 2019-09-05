@@ -120,12 +120,6 @@ public class Profile_Fragment extends Fragment {
 
     }
 
-
-
-    public void logout(View view){
-
-    }
-
     @Override
     public void onDestroyView() {
         super.onDestroyView();

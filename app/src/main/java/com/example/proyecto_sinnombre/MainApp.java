@@ -81,6 +81,7 @@ public class MainApp extends AppCompatActivity {
             } else {
                 Intent main = new Intent(this, Login.class);
                 startActivity(main);
+                finish();
                 //user cant go back
             }
 //          checkUserExists();
